@@ -1,0 +1,32 @@
+{
+  "name": "adriana-holistica",
+  "version": "1.0.0",
+  "description": "Página web de terapia holística",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamaraantonella/pistono-rolon.git"
+  },
+  "keywords": [
+    "desarrollo",
+    "inmobiliario"
+  ],
+  "author": "Tamara Antonella Frazzetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamaraantonella/pistono-rolon/issues"
+  },
+  "homepage": "https://github.com/tamaraantonella/pistono-rolon#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

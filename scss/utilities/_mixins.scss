@@ -1,0 +1,6 @@
+@mixin titles {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: map-get($colors , verdeP );
+    font-size: 2rem;
+}
