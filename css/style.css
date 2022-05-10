@@ -1,5 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
 * {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f5f5f5; }
+
+footer .main__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; }
+  footer .main__footer .footer__text {
+    background-color: rgba(186, 168, 155, 0.3);
+    color: #979797;
+    text-transform: uppercase;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    justify-content: center; }
+    footer .main__footer .footer__text p {
+      padding: 0;
+      margin: 0;
+      font-size: 14px; }
+  footer .main__footer .footer__enlaces {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between; }
+    footer .main__footer .footer__enlaces a img {
+      height: 36px;
+      width: 36px; }
+  footer .main__footer p {
+    color: #979797; }
+
+@media screen and (min-width: 768px) {
+  footer .main__footer {
+    margin-top: 30px; }
+    footer .main__footer .footer__text p {
+      padding: 0;
+      margin: 0;
+      font-size: 20px; }
+    footer .main__footer .footer__enlaces {
+      display: flex;
+      width: 40%;
+      margin: 0 auto;
+      justify-content: space-between; }
+      footer .main__footer .footer__enlaces a img {
+        height: 36px;
+        width: 36px; }
+    footer .main__footer p {
+      color: #979797; } }
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -53,7 +108,7 @@ header {
         display: block; }
   header .nav #nav__checkbox:checked ~ .nav__menu {
     background-color: whitesmoke;
-    height: 100vh; }
+    height: 100vmax; }
   header .nav #nav__checkbox:checked ~ ul.nav__menu li {
     display: block; }
   header .nav #nav__checkbox:checked ~ .nav__toggle .close {
@@ -87,35 +142,39 @@ header {
         font-size: 10px; }
 
 @media screen and (min-width: 768px) {
-  header .nav .nav__toggle {
-    display: none; }
-  header .nav .nav__menu {
-    flex-direction: row;
-    margin-right: 2rem; }
-    header .nav .nav__menu li {
-      display: block;
-      padding-top: 1rem; }
-      header .nav .nav__menu li a {
-        color: white; }
-  header .header__content h1 {
-    font-size: 40px;
-    font-weight: bolder; }
-  header .header__content p {
-    width: 65%;
-    font-size: 30px; }
-  header .header__content div {
-    width: 130px;
-    height: 40px;
-    padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.475);
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    header .header__content div a {
-      text-decoration: none;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 20px; } }
+  header {
+    height: 500px; }
+    header .nav .nav__toggle {
+      display: none; }
+    header .nav .nav__menu {
+      flex-direction: row;
+      margin-right: 2rem; }
+      header .nav .nav__menu li {
+        display: block;
+        padding-top: 1rem; }
+        header .nav .nav__menu li a {
+          color: white; }
+    header .header__content {
+      width: 70%; }
+      header .header__content h1 {
+        font-size: 40px;
+        font-weight: bolder; }
+      header .header__content p {
+        width: 65%;
+        font-size: 30px; }
+      header .header__content div {
+        width: 130px;
+        height: 40px;
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.475);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .header__content div a {
+          text-decoration: none;
+          color: white;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px; } }
 
 main {
   font-family: 'Montserrat', sans-serif; }
@@ -146,24 +205,146 @@ main {
       font-size: 12px;
       width: 90%;
       margin: 0 auto; }
-  main .main__contenedor--box {
+  main .main__terapias {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    justify-content: center;
+    align-items: center;
     margin: 45px auto; }
-    main .main__contenedor--box h2 {
+    main .main__terapias h2 {
+      text-align: center;
       color: #BC7892; }
-    main .main__contenedor--box .terapia {
+    main .main__terapias .main__contenedor--box {
       display: flex;
       flex-direction: column;
-      gap: 5px;
-      align-items: center; }
-      main .main__contenedor--box .terapia .terapia__img img {
-        width: 100px;
-        height: 81px; }
-      main .main__contenedor--box .terapia .terapia__text {
-        text-align: left; }
-        main .main__contenedor--box .terapia .terapia__text h3 {
-          font-size: 14px; }
-        main .main__contenedor--box .terapia .terapia__text p {
-          font-size: 10px; }
+      width: 95%;
+      max-width: 1024px; }
+      main .main__terapias .main__contenedor--box .terapia {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 20px auto;
+        max-width: 600px; }
+        main .main__terapias .main__contenedor--box .terapia .terapia__text {
+          margin-top: 10px;
+          text-align: left; }
+          main .main__terapias .main__contenedor--box .terapia .terapia__text div {
+            background-color: #BC7892;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            height: 40px;
+            justify-content: center;
+            margin-bottom: 10px;
+            max-width: 300px; }
+            main .main__terapias .main__contenedor--box .terapia .terapia__text div h3 {
+              font-size: 12px;
+              color: white;
+              padding: 0px;
+              margin: 0px;
+              text-align: center; }
+          main .main__terapias .main__contenedor--box .terapia .terapia__text img {
+            width: 120px;
+            height: 90px;
+            float: left;
+            margin-right: 10px;
+            border-radius: 20px; }
+          main .main__terapias .main__contenedor--box .terapia .terapia__text p {
+            font-size: 12px;
+            display: inline;
+            padding: 0;
+            margin: 0; }
+  main .main__card {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center; }
+    main .main__card .main__card--img {
+      width: 100%;
+      height: 150px;
+      background-image: url(../assets/cursos.jpg);
+      background-position: center;
+      background-size: cover; }
+    main .main__card .main__card--texts h2 {
+      margin: 15px auto;
+      color: #979797;
+      text-align: center; }
+    main .main__card .main__card--texts p {
+      color: white;
+      background-color: #E48F87;
+      padding: 1rem;
+      font-size: 14px; }
+      main .main__card .main__card--texts p a {
+        margin-top: auto;
+        color: white;
+        background-color: #E48F87;
+        border-radius: 10px;
+        padding: 0.5rem;
+        align-self: flex-start; }
+  main .main__listado {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-bottom: 40px; }
+    main .main__listado div {
+      font-size: 10px;
+      transition: all .8s ease-in-out;
+      padding: 5px;
+      cursor: pointer; }
+      main .main__listado div:hover {
+        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5); }
+
+@media screen and (min-width: 768px) {
+  main .main__contenedor--box p {
+    font-size: 16px; }
+  main .main__presentacion {
+    height: 200px; }
+    main .main__presentacion p {
+      font-size: 16px; }
+  main .main__terapias .main__contenedor--box {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    margin: 45px auto;
+    gap: 10px;
+    justify-content: center; }
+  main .main__card {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    height: 300px; }
+    main .main__card .main__card--img {
+      width: 50%;
+      height: 100%; }
+    main .main__card .main__card--texts {
+      margin-bottom: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 300px;
+      width: 100%; }
+      main .main__card .main__card--texts h2 {
+        height: 30%;
+        margin: 15px auto;
+        color: #4F4C4C;
+        text-align: center; }
+      main .main__card .main__card--texts p {
+        height: 70%;
+        margin: 0;
+        margin-top: auto; }
+  main .main__listado {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    max-width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    margin: 40px auto; }
+    main .main__listado div {
+      text-align: center;
+      font-size: 14px; } }

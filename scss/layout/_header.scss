@@ -64,7 +64,7 @@ header{
         }
         #nav__checkbox:checked ~ .nav__menu {
             background-color: whitesmoke;
-            height: 100vh;
+            height: 100vmax;
         }
         #nav__checkbox:checked ~ ul.nav__menu li{
             display: block;
@@ -110,6 +110,7 @@ header{
 
 @media screen and (min-width:768px) {
     header{
+        height: 500px;
         .nav{
             .nav__toggle{
                 display: none;
@@ -127,6 +128,7 @@ header{
             }
         }
         .header__content{
+            width: 70%;
             h1{
                 font-size: 40px;
                 font-weight: bolder;
