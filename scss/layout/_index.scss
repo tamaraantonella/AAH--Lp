@@ -1,12 +1,12 @@
 main{
+    font-family: 'Montserrat', sans-serif;
     .main__contenedor{
         width: 90%;
-        margin: 0 auto;
+        margin: 45px auto;
         &--box{
             display: flex;
             flex-direction: column;
             text-align: center;
-            margin: 45px 0px;
             h2{
                 color:map-get($colors , lila );
             }
@@ -20,8 +20,9 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        height: 300px;
+        text-align: center; 
+        height: 200px;
+        justify-content: center;
         background-color: #F9F1E8;
         h2{
             color:map-get($colors, lila)
@@ -29,6 +30,40 @@ main{
         p{
             color: map-get($colors, gray_p);
             font-size: 12px;
+            width: 90%;
+            margin: 0 auto;
+        
+        }
+    }
+    .main__contenedor--box{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin:45px auto;
+        h2{
+            color:map-get($colors, lila)
+        }
+        .terapia{
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+            align-items: center;
+            .terapia__img{
+                
+                img{
+                    width: 100px;
+                    height: 81px;
+                }
+            }
+            .terapia__text{
+                text-align: left;
+                h3{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
         }
     }
 }

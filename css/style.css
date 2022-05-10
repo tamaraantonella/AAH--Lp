@@ -117,29 +117,53 @@ header {
       font-family: 'Montserrat', sans-serif;
       font-size: 20px; } }
 
-main .main__contenedor {
-  width: 90%;
-  margin: 0 auto; }
+main {
+  font-family: 'Montserrat', sans-serif; }
+  main .main__contenedor {
+    width: 90%;
+    margin: 45px auto; }
+    main .main__contenedor--box {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      main .main__contenedor--box h2 {
+        color: #BC7892; }
+      main .main__contenedor--box p {
+        font-size: 12px;
+        color: #4F4C4C; }
+  main .main__presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    justify-content: center;
+    background-color: #F9F1E8; }
+    main .main__presentacion h2 {
+      color: #BC7892; }
+    main .main__presentacion p {
+      color: #4F4C4C;
+      font-size: 12px;
+      width: 90%;
+      margin: 0 auto; }
   main .main__contenedor--box {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin: 45px 0px; }
+    width: 95%;
+    margin: 45px auto; }
     main .main__contenedor--box h2 {
       color: #BC7892; }
-    main .main__contenedor--box p {
-      font-size: 12px;
-      color: #4F4C4C; }
-
-main .main__presentacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 300px;
-  background-color: #F9F1E8; }
-  main .main__presentacion h2 {
-    color: #BC7892; }
-  main .main__presentacion p {
-    color: #4F4C4C;
-    font-size: 12px; }
+    main .main__contenedor--box .terapia {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center; }
+      main .main__contenedor--box .terapia .terapia__img img {
+        width: 100px;
+        height: 81px; }
+      main .main__contenedor--box .terapia .terapia__text {
+        text-align: left; }
+        main .main__contenedor--box .terapia .terapia__text h3 {
+          font-size: 14px; }
+        main .main__contenedor--box .terapia .terapia__text p {
+          font-size: 10px; }
