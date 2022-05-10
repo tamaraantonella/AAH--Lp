@@ -17,6 +17,7 @@ header{
     display: flex;
     flex-direction: column;
     .nav{
+        z-index: 99;
         .nav__checkbox{
             display: none;
         }
@@ -46,6 +47,7 @@ header{
             gap: 2rem;
             align-items: center;
             width: 100%;
+            
             li{
                 text-decoration: none;
                 display: none;
@@ -55,6 +57,9 @@ header{
                 a{
                     text-decoration: none;
                     color: grey;
+                    &:active ~ ul .nav__menu li{
+                        display: none;
+                    }
                 }
                 &:first-child{
                     margin-right: auto;
@@ -64,7 +69,8 @@ header{
         }
         #nav__checkbox:checked ~ .nav__menu {
             background-color: whitesmoke;
-            height: 100vmax;
+            height: 400px;
+            
         }
         #nav__checkbox:checked ~ ul.nav__menu li{
             display: block;
